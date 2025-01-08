@@ -1,0 +1,59 @@
+.host {
+  @apply flex justify-between;
+}
+
+.my-music {
+  @apply w-full max-h-screen px-[50px] pb-[20px] overflow-y-scroll;
+}
+
+.my-music::-webkit-scrollbar {
+  @apply w-[7px];
+}
+.my-music::-webkit-scrollbar-thumb {
+  @apply bg-[#37AB00] bg-opacity-20 rounded-[10px];
+}
+.my-music::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.table {
+  @apply w-full text-left table-fixed border-collapse mt-[3vh];
+}
+
+.play {
+  @apply text-[#37AB00] text-[0.5rem];
+}
+
+.running {
+  @apply bg-[#FFF] p-[10px];
+  box-shadow: 0px 0px 15px 0px #0000004D
+}
+.running td {
+  @apply text-[#37AB00];
+}
+
+thead th {
+  @apply text-[0.85rem] font-bold text-[#0000004D];
+}
+
+th,
+td {
+  @apply pr-[20px] whitespace-nowrap overflow-hidden text-ellipsis;
+}
+
+th:first-child,
+td:first-child {
+  @apply pl-[10px];
+}
+
+tr td {
+  @apply p-[10px_20px_10px_0] mt-[10px] font-semibold text-[0.85rem] text-[#000000b3];
+}
+
+tr td:hover {
+  @apply cursor-pointer text-[#37AB00];
+}
+
+tr td:nth-child(1) {
+  @apply pl-[10px];
+}

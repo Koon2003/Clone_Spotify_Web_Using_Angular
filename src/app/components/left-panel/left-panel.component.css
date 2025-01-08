@@ -1,0 +1,22 @@
+:root {
+  --h-spotify-logo: 120px;
+  --h-menu-opcoes: 150px;
+  --h-footer-user: 70px;
+  --m-entre-menus: 10px;
+  --h-desconsiderar: calc(
+    var(--h-spotify-logo) + var(--h-menu-opcoes) + var(--h-footer-user)
+  );
+}
+
+.playlist-scroll {
+  @apply w-full overflow-y-auto;
+  max-height: calc(95vh - var(--h-desconsiderar));
+}
+
+.playlist-scroll::-webkit-scrollbar {
+  display: none; /* Ẩn thanh cuộn */
+}
+
+.playlist-scroll * {
+  margin-bottom: var(--m-entre-menus); /* Khoảng cách giữa các menu */
+}

@@ -1,0 +1,43 @@
+<div class="max-w-[300px] min-h-screen overflow-y-hidden flex flex-col bg-[#FFF] shadow-md mb-[10px]">
+    <div class="flex-grow flex-col h-full px-10">
+        <!-- Logo -->
+        <div class="flex justify-center items-center min-h-32">
+            <img src="https://github.com/cristianWilliam/Spotify-Angular/blob/master/src/assets/images/spotify-logo.png?raw=true"
+                alt="logo" class="w-[70%]" />
+        </div>
+        <!-- Menu -->
+        <div class="w-full flex-col justify-start items-center min-h-[150px] mb-[10px]">
+            <app-button-menu [description]="'Home'" [selected]="menuSelected === 'Home'" (click)="buttonClick('Home')">
+                <fa-icon [icon]="homeIcone"></fa-icon>
+            </app-button-menu>
+            <app-button-menu [description]="'Search'" [selected]="menuSelected === 'Search'"
+                (click)="buttonClick('Search')">
+                <fa-icon [icon]="searchIcone"></fa-icon>
+            </app-button-menu>
+            <app-button-menu [description]="'Artists'" [selected]="menuSelected === 'Artists'"
+                (click)="buttonClick('Artists')">
+                <fa-icon [icon]="artistIcone"></fa-icon>
+            </app-button-menu>
+        </div>
+
+        <div class="w-full flex-col justify-start items-center">
+            <span class="my-[10px] self-start font-bold text-[0.7rem] text-[#0000004D]">
+                PLAYLISTS
+            </span>
+            <div class="playlist-scroll">
+                <app-button-menu
+                    *ngFor="let playlist of playlists"
+                    [description]="playlist.name"
+                    [selected]="menuSelected === playlist.id"
+                    (click)="buttonClick(playlist.id)"
+                >
+                    <fa-icon [icon]="playlistIcone"></fa-icon>
+                </app-button-menu>
+            </div>
+        </div>
+    </div>
+    <!-- User Footer -->
+    <div class="flex-grow-0 block bottom-0 self-end w-full h-[70px]">
+        <app-user-footer></app-user-footer>
+    </div>
+</div>

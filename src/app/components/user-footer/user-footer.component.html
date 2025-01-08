@@ -1,0 +1,9 @@
+<div class="user-footer-container">
+    <img [src]="user.imageUrl" alt="user_avatar"/>
+    <span>{{ user.name }}</span>
+    <fa-icon 
+        class="icone"
+        [icon]="exitIcone"
+        (click)="logout()"
+    ></fa-icon>
+</div>

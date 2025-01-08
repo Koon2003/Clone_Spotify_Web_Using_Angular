@@ -1,0 +1,16 @@
+.card {
+    @apply bg-[#FFF] shadow-md rounded-[10px] h-[200px] relative overflow-hidden p-[20px];
+}
+
+.artist {
+    @apply flex absolute top-0 left-0 w-full h-full z-[1] px-[30px] py-[10px] flex-col justify-center items-start;
+}
+
+.image {
+    @apply absolute top-0 left-0 w-full h-full bg-center bg-cover bg-no-repeat opacity-40 z-0;
+}
+
+span {
+    text-shadow: 2px 2px 10px #FFF;
+}
+

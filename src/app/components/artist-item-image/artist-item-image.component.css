@@ -1,0 +1,16 @@
+
+.image {
+    @apply flex items-center cursor-pointer py-[5px];
+}
+
+.image:hover {
+    @apply bg-[#FFF];
+}
+
+.image img {
+    @apply w-[40px] rounded-[50%] flex-grow-0;
+}
+
+.image span {
+    @apply text-[#000000b3] flex-grow ml-[10px] font-semibold text-[0.85rem] whitespace-nowrap overflow-hidden text-ellipsis;
+}

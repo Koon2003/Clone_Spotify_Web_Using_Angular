@@ -1,0 +1,16 @@
+<div>
+    <input 
+        type="text"
+        [(ngModel)]="fieldSearch"
+        placeholder="Artists, Songs, or Playlists"
+        (keyup)="search()"
+    />
+    <div class="flex-wrap flex">
+        <span
+            *ngFor="let recentSearch of recentSearches"
+            (clicl)="defineSearch(recentSearch)"
+        >
+            {{ recentSearch }}
+        </span>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="block w-full m-[10px]">
+    <button 
+        type="button" 
+        class="w-full border-0 py-[10px] pl-[20px] rounded-[5px] text-left font-semibold text-[0.8rem] cursor-pointer bg-transparent text-[#37AB00] selected"
+        [class.selected]="selected"
+        (click)="onClick()"
+    >
+        <ng-content></ng-content>
+        <span class="inline-block align-middle w-[150px] whitespace-nowrap ml-[15px] overflow-hidden text-ellipsis">
+            {{ description }}
+        </span>
+    </button>
+</div>

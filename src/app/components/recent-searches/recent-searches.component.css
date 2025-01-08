@@ -1,0 +1,22 @@
+
+input {
+    @apply w-full p-[10px_15px] rounded-[8px] border-[#0000004D] outline-none text-[#37AB00] text-[1rem] font-medium;
+}
+
+input::placeholder {
+    @apply text-[#0000004D] text-[0.85rem];
+}
+
+input:focus, input:active {
+    @apply border-[#37AB00];
+    border-width: 2px;
+}
+
+span {
+    @apply bg-[#FFF] mr-[5px] p-[5px_10px] text-[#000000b3] mt-[10px] text-[0.9rem] rounded-[20px] cursor-pointer;  
+    border: 1px solid #0000004D;
+}
+
+span:hover {
+    @apply bg-[#37AB00] text-[#FFF] bg-opacity-80;
+}

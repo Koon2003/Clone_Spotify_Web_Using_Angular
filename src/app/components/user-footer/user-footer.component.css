@@ -1,0 +1,15 @@
+.user-footer-container {
+    @apply flex px-[30px] py-[5px] justify-between items-center h-full w-full text-[] border-t border-[#00000033];
+}
+
+img {
+    @apply flex-grow-0 w-[40px] h-auto rounded-[50%];
+}
+
+span {
+    @apply flex-grow ml-[20px] text-[0.9rem] font-bold;
+}
+
+.icone {
+    @apply flex-grow-0 cursor-pointer;
+}
